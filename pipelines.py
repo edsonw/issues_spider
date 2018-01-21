@@ -11,6 +11,7 @@ from scrapy.exceptions import DropItem
 from scrapy import log
 from pymongo import MongoClient
 
+# 根据item的类型插入到数据库当中
 class IssueSpiderPipeline(object):
     def __init__(self):
         client = MongoClient(settings['MONGODB_SERVER'],
