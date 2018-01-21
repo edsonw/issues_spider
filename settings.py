@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for issue_spider project
+# Scrapy settings for issues_spider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'issue_spider'
+BOT_NAME = 'issues_spider'
 
-SPIDER_MODULES = ['issue_spider.spiders']
-NEWSPIDER_MODULE = 'issue_spider.spiders'
+SPIDER_MODULES = ['issues_spider.spiders']
+NEWSPIDER_MODULE = 'issues_spider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'issue_spider (+http://www.yourdomain.com)'
+#USER_AGENT = 'issues_spider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ DOWNLOAD_DELAY = 0.08
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'issue_spider.middlewares.IssueSpiderSpiderMiddleware': 543,
+#    'issues_spider.middlewares.IssueSpiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'issue_spider.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'issues_spider.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ DOWNLOAD_DELAY = 0.08
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'issue_spider.pipelines.IssueSpiderPipeline': 300,
+   'issues_spider.pipelines.IssueSpiderPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -89,7 +89,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-# ITEM_PIPELINES = ['issue_spider.pipelines.IssueSpiderPipeline', ]
+# ITEM_PIPELINES = ['issues_spider.pipelines.IssueSpiderPipeline', ]
 
 # MongoDB设置
 MONGODB_SERVER = "192.168.205.126"
