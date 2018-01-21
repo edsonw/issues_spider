@@ -79,6 +79,8 @@ class CrawlIssues(scrapy.Spider):
                 ('tgstation', 'tgstation'),
                 ('zendframework', 'zendframework')
                 ]
+
+
     def start_requests(self):
         for project in self.projects:
             headers = {

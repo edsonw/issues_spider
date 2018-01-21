@@ -91,6 +91,7 @@ ITEM_PIPELINES = {
 
 # ITEM_PIPELINES = ['issue_spider.pipelines.IssueSpiderPipeline', ]
 
+# MongoDB设置
 MONGODB_SERVER = "192.168.205.126"
 MONGODB_PORT = 27017
 MONGODB_DB = "github"

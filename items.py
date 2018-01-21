@@ -13,6 +13,7 @@ class IssueSpiderItem(Item):
     # name = scrapy.Field()
     pass
 
+# issue 类
 class GitHubIssues(Item):
 
     issue_id = Field()
@@ -36,7 +37,7 @@ class GitHubIssues(Item):
     type = Field()
 
 
-
+# comment类
 class GitHubComments(Item):
     body = Field()
     issue_id = Field()
