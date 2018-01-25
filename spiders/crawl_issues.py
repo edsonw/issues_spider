@@ -21,6 +21,7 @@ class CrawlIssues(scrapy.Spider):
     name = 'crawl_issues'
     allowed_domains = ['api.github.com']
     start_urls = ['https://api.github.com']
+    tokens = ['your token']
 
     it = itertools.cycle(tokens)
 
